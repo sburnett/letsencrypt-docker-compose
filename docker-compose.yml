@@ -39,7 +39,7 @@ services:
   www-whichride:
     image: us-west1-docker.pkg.dev/sburnett/www/www-whichride
     ports:
-      - "80:8081"
+      - "8081:80"
     restart: unless-stopped
 
 volumes:
