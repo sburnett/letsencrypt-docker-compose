@@ -42,6 +42,12 @@ services:
       - "8081:80"
     restart: unless-stopped
 
+  www-tapercaper:
+    image: us-west1-docker.pkg.dev/sburnett/www/www-tapercaper
+    ports:
+      - "8082:80"
+    restart: unless-stopped
+
 volumes:
   nginx_conf:
     external: true
