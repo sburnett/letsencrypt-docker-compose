@@ -36,6 +36,12 @@ services:
       - ./:/workdir:ro
     restart: unless-stopped
 
+  www-whichride:
+    image: us-west1-docker.pkg.dev/sburnett/www/www-whichride
+    ports:
+      - "80:8081"
+    restart: unless-stopped
+
 volumes:
   nginx_conf:
     external: true
