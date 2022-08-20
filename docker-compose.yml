@@ -55,7 +55,7 @@ services:
     ports:
       - "8083:8080"
     restart: unless-stopped
-    user: 1000
+    user: 1000:1000
 
 volumes:
   nginx_conf:
