@@ -55,6 +55,10 @@ services:
     ports:
       - "8083:8080"
     restart: unless-stopped
+    # To let the container create a database in the volume:
+    # 1. docker inspect pantry_db
+    # 2. Find the "Mountpoint" field
+    # 3. sudo chown 1000:1000 $MOUNTPOINT
     user: 1000:1000
 
 volumes:
