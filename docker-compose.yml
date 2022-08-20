@@ -58,8 +58,8 @@ services:
     # To let the container create a database in the volume:
     # 1. docker inspect pantry_db
     # 2. Find the "Mountpoint" field
-    # 3. sudo chown 1000:1000 $MOUNTPOINT
-    user: 1000:1000
+    # 3. sudo chown 1234:1234 $MOUNTPOINT
+    user: 1234:1234
 
 volumes:
   nginx_conf:
